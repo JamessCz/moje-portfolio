@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#aa1b14"><!--rgb(170,27,20)-->
+
+  <!--SEO-->
+  <meta name="description" content="Osobní portfolio Jakuba Horáčka">
+  <meta name="keywords" content="Jakub,Horáček,Gamer,Bubeník,Vývojář,Programátor,HTML,CSS,Java,JavaScript,C++,PHP,C#">
+  <meta name="author" content="Jakub Horáček">
+  <!--Open Graph Tags-->
+  <meta property="og:title" content="Jakub Horáček">
+  <meta property="og:site_name" content="jakubhoracek.8u.cz">
+  <meta property="og:description" content="Osobní portfolio Jakuba Horáčka">
+  <meta property="og:type" content="portfolio">
+  <meta property="og:image" content="images/avatar.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Jakub Horáček">
+  <meta property="og:url" content="http://jakubhoracek.8u.cz/">
+  <!--Twitter Card-->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Jakub__Horacek">
+  <meta name="twitter:title" content="Jakub Horáček">
+  <meta name="twitter:description" content="Moje osobní portfolio.">
+  <meta name="twitter:image" content="images/avatar.png">
+  <!--Canonical Tag-->
+  <link rel="canonical" href="http://jakubhoracek.8u.cz">
+
+  <title>Jakub Horáček</title>
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scrolldown.css">
+</head>
+
+<body>
+
+  <!--Scroll to top-->
+  <button onclick="topFunction()" id="scrollUp"><i class="material-icons">forward</i></button>
+
+  <nav>
+    <a href="index.html" id="activePage">Hlavní stránka</a>
+    <a href="tvorba.html">Moje tvorba</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <div class="banner">
+
+    <div class="banner-bg"></div>
+
+    <div class="hero">
+      <div class="heroObrazek">
+        <img src="images/avatar.png" class="myAvatar" alt="Jakub Horáček">
+      </div>
+      <div class="heroText">
+        <h1 class="changingText">
+          <span class="letters letters-1">Vývojář</span>
+          <span class="letters letters-2">Bubeník</span>
+          <span class="letters letters-3">Gamer</span>
+        </h1>
+        <h2>Jakub Horáček</h2>
+      </div> 
+    </div>
+
+    <div class="scroll-downs">
+      <div class="mousey">
+        <div class="scroller"></div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="subSection">
+    <h1>Informace</h1>
+  </div>
+  <div class="sect sectInformace">
+    <div class="Container">
+      <p>
+        Jsem student střední školy <a href="https://www.creativehill.cz/" target="_blank" class="pLink">Creative Hill College</a> 
+        ve Zlíně, kde studuji obor Vývoj Multimediálních Aplikací.
+      </p>
+      <p>
+        Baví mě tvoření různých programů, aplikací, nebo i stránek.
+      </p>
+      <img src="" class="" alt="">
+    </div>
+  </div>
+
+  <div class="subSection">
+    <h1>Záliby</h1>
+  </div>
+  <div class="sect sectZaliby">
+    <div class="Container">
+      <p>
+        Mezi moje nejoblíbenější koníčky patří hraní na bicí nástroje a hraní počítačových her.
+      </p>
+      <p>
+        Už od malička se věnuji gamingu, patří to mezi mé nejoblíbenější záliby a pořád se chci zdokonalovat. 
+        Nejvíc mě baví hry <a href="http://www.teamfortress.com/" target="_blank" class="pLink">Team Fortress 2</a> 
+        a <a href="https://www.ea.com/cs-cz/games/titanfall/titanfall-2" target="_blank" class="pLink">Titanfall 2</a>.
+      </p>
+      <p>
+        Chodím do <a href="http://www.zusokruzni.cz/" target="_blank" class="pLink">Základní Umělecké Školy</a> 
+        ve Zlíně, kde se učím na bicí.
+      </p>
+      <img src="" class="" alt="">
+    </div>
+  </div>
+
+  <footer>
+    <h3>Jakub Horáček | &copy;2020</h3>
+  </footer>
+
+  <script src="scripts/scroll_up.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="scripts/textChanger.js"></script>
+  <script src="scripts/gsap.js"></script>
+</body>
+
+</html>
