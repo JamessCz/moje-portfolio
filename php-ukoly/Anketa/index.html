@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Sen&display=swap" rel="stylesheet">
+    <title>Anketa</title>
+    <style>
+        body {
+            font-family: 'Sen', sans-serif;
+            text-align: center;
+            color: white;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 2px;
+            font-size: 50px;
+        }
+
+        .anketa {
+            text-align: center;
+            margin: auto;
+            padding: 15px;
+            width: 500px;
+            height: 115px;
+            border-radius: 15px;
+            background: rgb(0,159,255);
+            background: radial-gradient(circle, rgba(0,159,255,1) 0%, rgba(173,173,205,1) 100%);
+        }
+
+        .anketa h2 {
+            margin-bottom: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .anketa a {
+            text-decoration: none;
+            color:blue;
+            margin: 5px;
+            padding: 10px;
+            transition: 0.5s;
+        }
+
+        .anketa a:hover {
+            color: white;
+            border-top: 1.5px solid white;
+            border-left: 1.5px solid white;
+            border-radius: 8px;
+            box-shadow: 2px 2px 1.6px 1px rgba(255,255,255,0.5);
+            /*box-shadow: inset 2px 2px 1.6px 1px rgba(255,255,255,0.5);*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1><a href="index.html">Anketa</a></h1>
+    <div class="anketa">
+        <h2>Jakou zmrzlinu máš nejraději?</h2>
+        <a href="odeslat.php?volba=1">Čokoládovou</a>
+        <a href="odeslat.php?volba=2">Vanilkovou</a>
+        <a href="odeslat.php?volba=3">Jahodovou</a>
+    </div>
+</body>
+</html>
