@@ -1,0 +1,91 @@
+body {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(210,210,210,1) 100%);
+}
+
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  h1 {
+      font-family: sans-serif;
+      text-align: center;
+  }
+
+  .wrapper a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    margin-top: 25px;
+  }
+  
+  .wrapper a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .wrapper a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+  }
+  
+  .wrapper a:hover{
+    color: #fff;
+  }
+  
+  .wrapper a:hover:after{
+    width: 100%;
+  }
+
+  .wrapper a:active {
+      transform: scale(1.1);
+  }
+
+  p {
+      text-align: center;
+      margin: 2px;
+  }
+
+.autor{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+a {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    border: none;
+    text-decoration: none;
+    transition: 0.5;
+}
+
+a:hover {
+    color: #ff003b;
+}
+
+a:active {
+    color: black;
+}
