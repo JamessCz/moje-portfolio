@@ -89,3 +89,8 @@ a:hover {
 a:active {
     color: black;
 }
+
+form{
+  background-color: rgba(0, 0, 0, 0.13);
+  width: 100px;
+}
