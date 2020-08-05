@@ -284,6 +284,38 @@ h2 {
   z-index: -1;
 }
 
+.sectPHP {
+  position: relative;
+}
+
+.sectPHP::after {
+  content: "";
+  background: url(images/programming.jpg) no-repeat top center / cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.sectJS {
+  position: relative;
+}
+
+.sectJS::after {
+  content: "";
+  background: url(images/programming.jpg) no-repeat top center / cover;
+  opacity: 0.08;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .Container {
   font-family: "Roboto", sans-serif;
   font-size: 125%;
@@ -473,6 +505,72 @@ textarea {
   width: 500px;
   height: 150px;
   resize: none;
+}
+
+/* TVORBA */
+
+.wrapper{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.wrapper a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  color: #333;
+  background-color: #ff003b;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  margin: 15px 0 5px 0px; /*15px 0 5px 30px*/
+}
+
+.wrapper a span{
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #333;
+  transition: all .35s;
+}
+
+.wrapper a:hover{
+  color: #fff;
+}
+
+.wrapper a:hover:after{
+  width: 100%;
+  border: 2px solid #ff003b;
+}
+
+.wrapper a:active {
+    transform: scale(1.1);
+}
+
+.wrapper p {
+  text-align: center;
+  margin: 2px;
 }
 
 /*
