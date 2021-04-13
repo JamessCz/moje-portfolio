@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="theme-color" content="#aa1b14" />
   <!--rgb(170,27,20)-->
+  <meta http-equiv="Cache-control" content="no-cache " />
 
   <!--SEO-->
   <meta name="description" content="Osobní portfolio Jakuba Horáčka" />
@@ -17,7 +18,7 @@
   <meta property="og:site_name" content="jakubhoracek.8u.cz" />
   <meta property="og:description" content="Osobní portfolio Jakuba Horáčka" />
   <meta property="og:type" content="portfolio" />
-  <meta property="og:image" content="images/avatar.png" />
+  <meta property="og:image" content="images/nahled.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:alt" content="Jakub Horáček" />
   <meta property="og:url" content="http://jakubhoracek.8u.cz/" />
@@ -26,13 +27,11 @@
   <meta name="twitter:site" content="@Jakub__Horacek" />
   <meta name="twitter:title" content="Jakub Horáček" />
   <meta name="twitter:description" content="Moje osobní portfolio." />
-  <meta name="twitter:image" content="images/avatar.png" />
+  <meta name="twitter:image" content="images/nahled.png" />
   <!--Canonical Tag-->
   <link rel="canonical" href="http://jakubhoracek.8u.cz" />
 
   <title>Jakub Horáček</title>
-  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
@@ -45,10 +44,18 @@
     <i class="material-icons">forward</i>
   </button>
 
-  <nav>
-    <a href="index.html">Hlavní stránka</a>
-    <a href="tvorba.html">Moje tvorba</a>
+  <nav id="normalNav">
+    <a href="index.html">Domů</a>
+    <a href="tvorba.html">Portfolio</a>
     <a href="kontakt.php" id="activePage">Kontakt</a>
+  </nav>
+
+  <div id="mobileTitle"><h1>Kontakt</h1></div>
+
+  <nav id="mobileNav">
+    <a href="index.html"><i class="material-icons">home</i></a>
+    <a href="tvorba.html"><i class="material-icons">view_carousel</i></a>
+    <a href="kontakt.php" id="activePage"><i class="material-icons">phone</i></a>
   </nav>
 
   <br />
@@ -114,8 +121,10 @@
         <br>
         <h3 class="emailH3">Napiš mi email:</h3>
         <form action="kontakt.php" method="post" id="usrform" required>
-          Tvoje emailová adresa: <input type="email" name="from" size="35" placeholder="nekdo@gmail.com" id="from" class="formItems" required><br>
-          Vlož nadpis svého emailu: <input type="text" name="title" size="35" placeholder="Název" id="title" class="formItems" required><br><br>
+          Tvoje emailová adresa: <br>
+          <input type="email" name="from" size="35" placeholder="nekdo@gmail.com" id="from" class="formItems" required><br>
+          Vlož nadpis svého emailu: <br>
+          <input type="text" name="title" size="35" placeholder="Název" id="title" class="formItems" required><br><br>
           Zde napiš svoji zprávu: <br><textarea name="message" form="usrform" id="message" rows=”6″ cols=”20″ placeholder="Zpráva" required></textarea><br><br>
           <input type="submit" name="ok" value="Odeslat" id="submit_btn" class="subSectBtn"><br><br>
         </form>
@@ -179,7 +188,7 @@
   </div>
 
   <footer>
-    <h3>Jakub Horáček | &copy;2020</h3>
+    <h3>&copy;2020 Jakub Horáček</h3>
   </footer>
 
   <script src="scripts/scroll_up.js"></script>

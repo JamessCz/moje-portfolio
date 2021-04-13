@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#aa1b14"><!--rgb(170,27,20)-->
+  <meta http-equiv="Cache-control" content="no-cache " />
 
   <!--SEO-->
   <meta name="description" content="Osobní portfolio Jakuba Horáčka">
@@ -16,7 +17,7 @@
   <meta property="og:site_name" content="jakubhoracek.8u.cz">
   <meta property="og:description" content="Osobní portfolio Jakuba Horáčka">
   <meta property="og:type" content="portfolio">
-  <meta property="og:image" content="images/avatar.png">
+  <meta property="og:image" content="images/nahled.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:alt" content="Jakub Horáček">
   <meta property="og:url" content="http://jakubhoracek.8u.cz/">
@@ -25,13 +26,11 @@
   <meta name="twitter:site" content="@Jakub__Horacek">
   <meta name="twitter:title" content="Jakub Horáček">
   <meta name="twitter:description" content="Moje osobní portfolio.">
-  <meta name="twitter:image" content="images/avatar.png">
+  <meta name="twitter:image" content="images/nahled.png">
   <!--Canonical Tag-->
   <link rel="canonical" href="http://jakubhoracek.8u.cz">
 
   <title>Jakub Horáček</title>
-  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="scrolldown.css">
@@ -42,19 +41,27 @@
   <!--Scroll to top-->
   <button onclick="topFunction()" id="scrollUp"><i class="material-icons">forward</i></button>
 
-  <nav>
-    <a href="index.html" id="activePage">Hlavní stránka</a>
-    <a href="tvorba.html">Moje tvorba</a>
+  <nav id="normalNav">
+    <a href="index.html" id="activePage">Domů</a>
+    <a href="tvorba.html">Portfolio</a>
     <a href="kontakt.php">Kontakt</a>
+  </nav>
+
+  <div id="mobileTitle"><h1>Domů</h1></div>
+
+  <nav id="mobileNav">
+    <a href="index.html" id="activePage"><i class="material-icons">home</i></a>
+    <a href="tvorba.html"><i class="material-icons">view_carousel</i></a>
+    <a href="kontakt.php"><i class="material-icons">phone</i></a>
   </nav>
 
   <div class="banner">
 
     <div class="banner-bg"></div>
-
+    
     <div class="hero">
       <div class="heroObrazek">
-        <img src="images/avatar.png" class="myAvatar" alt="Jakub Horáček">
+        <img src="images/avatar2.png" class="myAvatar" alt="Jakub Horáček">
       </div>
       <div class="heroText">
         <h1 class="changingText">
@@ -112,7 +119,7 @@
   </div>
 
   <footer>
-    <h3>Jakub Horáček | &copy;2020</h3>
+    <h3>&copy;2020 Jakub Horáček</h3>
   </footer>
 
   <script src="scripts/scroll_up.js"></script>
