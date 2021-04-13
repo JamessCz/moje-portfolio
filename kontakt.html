@@ -41,6 +41,12 @@
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 		/>
+		<link
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="scrolldown.css" />
 	</head>
@@ -52,112 +58,90 @@
 		</button>
 
 		<nav id="normalNav">
-			<a href="index.html" id="activePage">Domů</a>
+			<a href="index.html">Domů</a>
 			<a href="tvorba.html">Portfolio</a>
-			<a href="kontakt.php">Kontakt</a>
+			<a href="kontakt.html" id="activePage">Kontakt</a>
 		</nav>
 
-		<div id="mobileTitle"><h1>Domů</h1></div>
+		<div id="mobileTitle"><h1>Kontakt</h1></div>
 
 		<nav id="mobileNav">
-			<a href="index.html" id="activePage"
-				><i class="material-icons">home</i></a
-			>
+			<a href="index.html"><i class="material-icons">home</i></a>
 			<a href="tvorba.html"
 				><i class="material-icons">view_carousel</i></a
 			>
-			<a href="kontakt.html"><i class="material-icons">phone</i></a>
+			<a href="kontakt.php" id="activePage"
+				><i class="material-icons">phone</i></a
+			>
 		</nav>
 
-		<div class="banner">
-			<div class="banner-bg"></div>
-
-			<div class="hero">
-				<div class="heroObrazek">
-					<img
-						src="images/avatar2.png"
-						class="myAvatar"
-						alt="Jakub Horáček"
-					/>
-				</div>
-				<div class="heroText">
-					<h1 class="changingText">
-						<span class="letters letters-1">Vývojář</span>
-						<span class="letters letters-2">Bubeník</span>
-						<span class="letters letters-3">Gamer</span>
-					</h1>
-					<h2>Jakub Horáček</h2>
-				</div>
-			</div>
-
-			<div class="scroll-downs">
-				<div class="mousey">
-					<div class="scroller"></div>
-				</div>
-			</div>
-		</div>
+		<br />
+		<br />
 
 		<div class="subSection">
-			<h1>Informace</h1>
+			<h1>Sociální sítě</h1>
 		</div>
-		<div class="sect sectInformace">
-			<div class="Container">
-				<p>
-					Jsem student střední školy
-					<a
-						href="https://www.creativehill.cz/"
-						target="_blank"
-						class="pLink"
-						>Creative Hill College</a
-					>
-					ve Zlíně, kde studuji obor Vývoj Multimediálních Aplikací.
-				</p>
-				<p>
-					Baví mě tvoření různých programů, aplikací, nebo i stránek.
-				</p>
-				<img src="" class="" alt="" />
-			</div>
+		<div class="Social-Background">
+			<div class="fb"></div>
+			<div class="twtr"></div>
+			<div class="ig"></div>
+			<div class="pin"></div>
 		</div>
-
-		<div class="subSection">
-			<h1>Záliby</h1>
-		</div>
-		<div class="sect sectZaliby">
-			<div class="Container">
-				<p>
-					Mezi moje nejoblíbenější koníčky patří hraní na bicí
-					nástroje a hraní počítačových her.
-				</p>
-				<p>
-					Už od malička se věnuji gamingu, patří to mezi mé
-					nejoblíbenější záliby a pořád se chci zdokonalovat. Nejvíc
-					mě baví hry
+		<div class="Container-Social">
+			<ul>
+				<li>
 					<a
-						href="http://www.teamfortress.com/"
+						href="https://www.facebook.com/Jamesshoracek/"
 						target="_blank"
-						class="pLink"
-						>Team Fortress 2</a
+						data-classtochange="fb"
 					>
-					a
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span class="fa fa-facebook" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li>
 					<a
-						href="https://www.ea.com/cs-cz/games/titanfall/titanfall-2"
+						href="https://twitter.com/Jakub__Horacek"
 						target="_blank"
-						class="pLink"
-						>Titanfall 2</a
-					>.
-				</p>
-				<p>
-					Chodím do
-					<a
-						href="http://www.zusokruzni.cz/"
-						target="_blank"
-						class="pLink"
-						>Základní Umělecké Školy</a
+						data-classtochange="twtr"
 					>
-					ve Zlíně, kde se učím na bicí.
-				</p>
-				<img src="" class="" alt="" />
-			</div>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span class="fa fa-twitter" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://www.instagram.com/jamess_horacek/"
+						target="_blank"
+						data-classtochange="ig"
+					>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span class="fa fa-instagram" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://cz.pinterest.com/horacekjak/"
+						target="_blank"
+						data-classtochange="pin"
+					>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span class="fa fa-pinterest" aria-hidden="true"></span>
+					</a>
+				</li>
+			</ul>
 		</div>
 
 		<footer>
@@ -176,7 +160,28 @@
 			integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
 			crossorigin="anonymous"
 		></script>
-		<script src="scripts/textChanger.js"></script>
-		<script src="scripts/gsap.js"></script>
+		<script src="scripts/textChanger.js" defer></script>
+		<script defer>
+			let tlacitka = document.querySelectorAll(".Container-Social a");
+
+			tlacitka.forEach((e) => {
+				e.addEventListener("mouseenter", () => {
+					let string =
+						".Social-Background div." +
+						e.getAttribute("data-classtochange");
+					let div = document.querySelector(string);
+					console.log(string);
+					div.style.filter = "blur(0)";
+				});
+				e.addEventListener("mouseleave", () => {
+					let string =
+						".Social-Background div." +
+						e.getAttribute("data-classtochange");
+					let div = document.querySelector(string);
+					console.log(string);
+					div.style.filter = "blur(5px)";
+				});
+			});
+		</script>
 	</body>
 </html>
