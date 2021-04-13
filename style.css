@@ -26,10 +26,6 @@ body {
 	position: relative;
 }
 
-div:last-of-type {
-	display: none;
-}
-
 #normalNav {
 	display: block;
 }
@@ -581,6 +577,12 @@ textarea {
 .wrapper p {
 	text-align: center;
 	margin: 2px;
+}
+
+/* ENDORA AD FIX */
+body > div:not([class]) {
+	display: none !important;
+	visibility: hidden;
 }
 
 /* MEDIA */
